@@ -20,8 +20,12 @@ Yaptığım testler sonucunda en optimum değerin 16 olduğunu buldum. Oyun alan
 
 ## Eğer çemberler birbirlerine temas ederlerse bu sefer kurtların vücut ve baş bölgeleri birbirlerini kontrol etmeye başlarlar. Kurtlardan birisinin baş bölgesi diğer kurdun vücut bölgesine çarpsa baş bölgesiyle çarpan kurt başlangıç boyutuna döndürülüp oyuncunun ekranı dışındaki bir yere ışınlanır. 
 
+![Square](ReadMeImages/image.png)
+
+Oyundaki skorların kombolu skor artışını resimdeki grafiğe göre ayarladım.
+
+Apk : https://github.com/FurkanSertfs/WormsClone/blob/main/Apk/WormsClone.apk 
 
 
-Apk : https://github.com/FurkanSertfs/WormsClone/blob/main/Apk/WormsClone.apk
 
 
