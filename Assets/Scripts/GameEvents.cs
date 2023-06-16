@@ -1,23 +1,34 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameEvents : MonoBehaviour
 {
-
     public static GameEvents instance;
- 
-    public delegate void OnFoodDestroyedDelegate();
-    public delegate void OnBodyUpdatedDelegate();
+    public delegate void OnFoodDestroyedDelegate(Vector2 spawnPoints);
+
+    public delegate void OnUpdateScoreDeleagate(int score);
+
+    public delegate void OnSprintButtonPressedDeleagate(bool isPressed);
+
+    
+
 
     public OnFoodDestroyedDelegate OnFoodDestroyed;
-    public OnBodyUpdatedDelegate OnBodyUpdated;
+    public OnUpdateScoreDeleagate OnUpdateScore;
+
+    public OnSprintButtonPressedDeleagate OnSprintButtonPressed;
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-
 
 }
